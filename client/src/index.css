@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Jaini';
+    src: url('./assets/Jaini/Jaini-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+    font-family: 'Jaini', serif;
+}

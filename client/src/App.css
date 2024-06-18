@@ -1,0 +1,59 @@
+.hero {
+  position: absolute;
+  height: 100vh;;
+  /* background-image: url('./assets/Iron_Throne_Official_Guide.webp'); */
+  background-size: cover;
+  width: 100%;
+  z-index: -1;
+}
+
+.default--background {
+  background-image: url('./assets/Iron_Throne_Official_Guide.webp');
+}
+
+.navbar {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(128, 0, 0, 0.7);
+}
+
+.navbar--links {
+  list-style-type: none;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  color: #ffff00f7;
+  font-size: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.home {
+  /* position: absolute; */
+  top: 25%;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  color: #ffff00f7;
+}
+
+.home--title {
+  font-size: 75px;
+}
+
+.home--description {
+  font-size: 45px;
+}
+
+.home--author {
+  font-size: 20px;
+}
+
+.about {
+  color: #ffff00f7;
+}
+
+.houses--background {
+  background-color: #3c3c3c;
+}
