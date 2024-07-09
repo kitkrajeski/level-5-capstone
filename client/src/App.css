@@ -1,6 +1,6 @@
 .hero {
   position: absolute;
-  height: 100vh;;
+  height: 100vh;
   /* background-image: url('./assets/Iron_Throne_Official_Guide.webp'); */
   background-size: cover;
   width: 100%;
@@ -8,7 +8,7 @@
 }
 
 .default--background {
-  background-image: url('./assets/Iron_Throne_Official_Guide.webp');
+  background-image: url("./assets/Iron_Throne_Official_Guide.webp");
 }
 
 .navbar {
@@ -16,6 +16,7 @@
   left: 0;
   width: 100%;
   background-color: rgba(128, 0, 0, 0.7);
+  border-bottom: 2px solid #ffd700;
 }
 
 .navbar--links {
@@ -26,7 +27,7 @@
   width: 90%;
   color: #ffff00f7;
   font-size: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .home {
@@ -36,6 +37,40 @@
   display: flex;
   flex-direction: column;
   color: #ffff00f7;
+  margin-bottom: 50px;
+}
+
+.auth--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auth--text {
+  color: #ffff00f7;
+}
+
+.red--background {
+  /* display: flex; */
+  background-color: rgba(128, 0, 0, 0.7);
+  padding: 25px;
+  align-items: center;
+}
+
+.main--button {
+  background-color: #8b0000; /* Dark red */
+  color: #ffd700; /* Gold */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 1s ease;
+  border-radius: 5px;
+}
+
+.main--button:hover {
+  background-color: #730000; /* Gold */
+  transform: scale(1.05); /* Slightly enlarge the button */
 }
 
 .home--title {
@@ -51,9 +86,51 @@
 }
 
 .about {
+  display: flex;
+  flex-direction: column;
   color: #ffff00f7;
 }
 
 .houses--background {
   background-color: #3c3c3c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; */
+  flex-direction: column;
+}
+
+.houses--info {
+  color: #ffff00f7;
+}
+
+.houses--crests {
+  width: 100%;
+  min-width: 275px;
+  max-width: 310px;
+  height: 100%;
+  min-height: 275px;
+  max-height: 310px;
+  object-fit: contain;
+}
+
+.profile {
+  background-color: #3c3c3c;
+  color: #ffff00f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.user-houses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.coat-of-arms {
+  padding-bottom: 30px;
 }

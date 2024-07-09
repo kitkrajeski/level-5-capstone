@@ -6,14 +6,14 @@ const House = require('../models/house.js');
 //     res.send('hello from the houses api');
 // });
 
-housesRouter.get('/', async (req, res, next) => {
+housesRouter.get('/', async (req, res) => {
     try {
-       const houses = await House.find();
-       res.send(houses); 
+        const housesWithCrests = await House.find({crest: {$exists: true, $ne: ""}});
+        res.send(housesWithCrests)
     } catch (error) {
-        res.statusMessage(500).send(error);
+        res.status(500).send(error);
     }
-});
+})
 
 housesRouter.post('/', async (req, res, next) => {
     try {
